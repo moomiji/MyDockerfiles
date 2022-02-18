@@ -1,3 +1,5 @@
+#!/bin/bash
+
 nohup git pull >nohup.out &
 
 if [ "$1" = "python" ]; then
