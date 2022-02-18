@@ -5,5 +5,5 @@ if [ "$1" = "python" ]; then
 elif [ "$1" = "python3" ]; then
   exec "$*"
 else
-  python3 $*
+  python3 akhelper.py $*
 fi
