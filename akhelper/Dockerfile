@@ -1,5 +1,5 @@
-FROM python:slim-buster
-COPY / /ArknightsAutoHelper/
+FROM python:slim
+COPY *.sh /ArknightsAutoHelper/
 
 RUN apt update \
     && apt install --no-install-recommends -y git android-tools-adb \
