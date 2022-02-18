@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'akhelper/**'
+      - '!akhelper/README.md'
       - '.github/workflows/arkhelper.yml'
 
 jobs:
