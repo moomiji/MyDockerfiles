@@ -1,6 +1,6 @@
 FROM python:slim
 RUN apt update \
-    && apt install --no-install-recommends -y git android-tools-adb \
+    && apt install --no-install-recommends -y git android-tools-adb libgl1 \
                    tesseract-ocr tesseract-ocr-chi-sim tesseract-ocr-chi-sim-vert \
     && git clone git://github.com/ninthDevilHAUNSTER/ArknightsAutoHelper \
     && cd /ArknightsAutoHelper \
