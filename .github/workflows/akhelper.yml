@@ -10,9 +10,9 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "${{ env.IMAGE_NAME }}/**"
-      - "!${{ env.IMAGE_NAME }}/README.md"
-      - ".github/workflows/${{ env.IMAGE_NAME }}.yml"
+      - "$IMAGE_NAME/**"
+      - "!$IMAGE_NAME/README.md"
+      - ".github/workflows/$IMAGE_NAME.yml"
 
 jobs:
   publish:
