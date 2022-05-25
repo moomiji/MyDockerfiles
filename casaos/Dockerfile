@@ -9,4 +9,4 @@ RUN apt update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/* /root/.cache /tmp/*
 WORKDIR /casaOS
-CMD ['/bin/bash' '-c' 'sed -i "s/80/$HttpPort/g"; /usr/local/bin/casaos -c /casaOS/server/conf/conf.ini']
+CMD ['/bin/bash' '-c' 'sed -i "s/80/$HttpPort/g" /casaOS/server/conf/conf.ini && /usr/local/bin/casaos -c /casaOS/server/conf/conf.ini']
